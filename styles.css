@@ -39,6 +39,7 @@ h4 {
 
 .porudzbina {
   display: flex;
+  width: fit-content;
   flex-direction: column;
   justify-content: center;
   align-content: center;
