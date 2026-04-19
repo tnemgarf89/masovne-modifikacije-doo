@@ -55,5 +55,5 @@ h4 {
 }
 
 .row select {
-  width: 150px;
+  min-width: 150px;
 }

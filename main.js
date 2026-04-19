@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const verifyButton = document.getElementById("verify");
 
   verifyButton.addEventListener("click", () => {
-    verifyOrder() ? alert("super") : alert("ne bas");
+    verifyOrder()
+      ? alert("Uspeli smo da pronađemo vašu porudžbinu. Kod vaše nove isporuke je 738.")
+      : alert("Ne možemo da pronađemo ovu porudžbinu u našoj bazi. Molimo, pokušajte ponovo.");
   });
 
   function verifyOrder() {
