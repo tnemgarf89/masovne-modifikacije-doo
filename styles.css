@@ -47,7 +47,7 @@ h4 {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
 .row label {
@@ -55,5 +55,5 @@ h4 {
 }
 
 .row select {
-      width: 150px;
+  width: 150px;
 }
