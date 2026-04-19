@@ -1,7 +1,20 @@
-
 body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
-  margin: 0}
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.odgovor {
+  width: 60vw;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  padding: 5px;
+}
