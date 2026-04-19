@@ -1,7 +1,8 @@
-* { margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(46, 42, 42)
+  color: rgb(46, 42, 42);
 }
 
 body {
@@ -17,16 +18,42 @@ body {
   flex-direction: column;
 }
 
-.odgovor {
+.odgovor,
+.porudzbina {
   width: 60vw;
   border: 1px solid black;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.35);
 
   text-align: justify;
-  
-
 
   padding: 5px;
   margin: 15px;
+}
+
+h4 {
+  margin-left: 2px;
+  margin-bottom: 10px;
+}
+
+.porudzbina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 5px
+}
+
+.row label {
+  width: 100px;
+}
+
+.row select {
+      width: 150px;
 }
