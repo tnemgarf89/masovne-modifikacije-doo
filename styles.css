@@ -3,6 +3,7 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(46, 42, 42);
+  box-sizing: border-box;
 }
 
 body {
@@ -52,10 +53,12 @@ h4 {
 
 .row label {
   width: 100px;
+  display: inline-block;
 }
 
 .row select {
-  min-width: 200px;
+  flex: 1;
+  min-width: 120px;
   text-align: center;
 }
 
@@ -65,4 +68,42 @@ select:required:invalid {
 
 select option {
   color: black;
+}
+
+#verify {
+  margin-top: 10px;
+  padding: 3px;
+  width: calc(fit-content);
+  align-self: flex-end;
+}
+
+.preview-container {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  width: 100%;
+}
+
+.img-wrapper {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 1px black solid;
+}
+
+.food-img {
+  height: 100%;
+  width: 100%;
+
+  flex-shrink: 0;
+
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.food-img[src=""],
+.food-img:not([src]) {
+  visibility: hidden;
 }

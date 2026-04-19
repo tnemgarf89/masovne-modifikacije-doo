@@ -3,10 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.body.style.backgroundImage = `url('${background}')`;
 
+  // Options
   const selectGlavno = document.getElementById("glavno-jelo");
   const selectPice = document.getElementById("pice");
   const selectGrickalice = document.getElementById("grickalice");
 
+  // Image containers
+  const imgGlavno = document.getElementById("img-glavno");
+  const imgPice = document.getElementById("img-pice");
+  const imgGrickalice = document.getElementById("img-grickalice");
+
+  // Verify button
   const verifyButton = document.getElementById("verify");
 
   verifyButton.addEventListener("click", () => {
@@ -30,4 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     return true;
   }
+
+  selectGlavno.addEventListener("change", () => {
+    imgGlavno.src = "./img/" + selectGlavno.value;
+  });
+
+  selectPice.addEventListener("change", () => {
+    imgPice.src = "./img/" + selectPice.value;
+  });
+
+  selectGrickalice.addEventListener("change", () => {
+    imgGrickalice.src = "./img/" + selectGrickalice.value;
+  });
 });
