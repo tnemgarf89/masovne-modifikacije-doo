@@ -83,10 +83,8 @@ select option {
   gap: 5px;
   justify-content: center;
   width: 100%;
-}
 
-.img-wrapper {
-  min-width: 80px;
+    /* min-width: 80px;
   max-width: 100px;
 
   aspect-ratio: 1 / 1;
@@ -94,7 +92,19 @@ select option {
   height: 100px;
   flex-shrink: 0;
   overflow: hidden;
-  border: 1px black solid;
+  border: 1px black solid; */
+}
+
+.img-wrapper {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border: 1px solid black
+/*   
+  flex: 1;
+  max-width: 120px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid black; */
 }
 
 .food-img {
